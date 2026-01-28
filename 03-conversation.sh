@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PERSON1="Jithisha" # there wont be space between variable and =
+PERSON1="Jithisha" # there wont be space between value and =
 PERSON2="Rishi"
 echo "$PERSON1: Hello $PERSON2, how are you today?"
 echo "$PERSON2: Hi $PERSON1, I'm doing well, thank you! How about you?"
