@@ -22,14 +22,14 @@ VALIDATION()
 }
 
 dnf install nginx -y
-VALIDATION $? "Installing Nginx" >>& $LOGS_FILE
+VALIDATION $? "Installing Nginx" &>> $LOGS_FILE
 
 
 dnf install mysql -y
 
-VALIDATION $? "Installing MySQL" >>& $LOGS_FILE
+VALIDATION $? "Installing MySQL" &>> $LOGS_FILE
 
 
 dnf install nodejs -y
 
-VALIDATION $? "Installing nodejs" >>& $LOGS_FILE
+VALIDATION $? "Installing nodejs" &>> $LOGS_FILE
