@@ -1,8 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
-LOGS_FOLDER="/var/logs/shell-scripts"
-LOGS_FILE="/var/logs/shell-scripts/$0.log"
+LOGS_FOLDER="/var/log/shell-scripts"
+LOGS_FILE="/var/log/shell-scripts/$0.log"
 mkdir -p $LOGS_FOLDER
 
 if [ $USERID -ne 0 ]; then
