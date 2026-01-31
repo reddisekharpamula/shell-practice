@@ -27,7 +27,7 @@ do
 dnf list installed $package &>> $LOGS_FILE
 if [ $? -ne 0 ]; then
     echo "$package is not installed" | tee -a $LOGS_FILE
-    ech "Installing $package ..." | tee -a $LOGS_FILE
+    echo "Installing $package ..." | tee -a $LOGS_FILE
     dnf install $package -y &>> $LOGS_FILE
     VALIDATE $? "Installing $package"
 else
